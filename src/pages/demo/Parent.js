@@ -1,5 +1,6 @@
 import React from 'react'
 import Child from './Child'
+import './index.css'
 export default class Parent extends React.Component{
     // constructor(props){
     //     super(props);
@@ -24,7 +25,7 @@ export default class Parent extends React.Component{
     }
 
     render(){
-        return <div style={{padding: 50}}>
+        return <div className="content">
             <button onClick={this.handleAdd}>点击一下</button>
             <button onClick={this.handleClick.bind(this)}>再点击一下</button>
             <p>{this.state.count}</p>
