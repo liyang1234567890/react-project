@@ -34,15 +34,26 @@ export default class Child extends React.Component{
         console.log('did update');
     }
 
-    render(){//
+    render(){
         //will mount 是文字渲染之前打印的
         //did mount 是文字渲染之后打印的
         return <div>
             <p>这里是子组件，测试子组件的生命周期</p>
-            {/* props接受来自Life.js父组件中的值*/}
+            {/* props接受来自Parent.js父组件中的值*/}
             <p>{this.props.num}</p>
         </div>
     }
-
-
 }
+
+// import React from 'react'
+// export default class Child extends React.Component{
+//     // state = {
+//     //     count :0
+//     // }
+//     render(){
+//         return <div>
+//             <p>这里数据来自于子组件</p>
+//             <p>{this.props.number}</p>
+//         </div>
+//     }
+// }
